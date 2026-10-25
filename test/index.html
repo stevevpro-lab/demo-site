@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>test – Site de démonstration</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:#1f2933;line-height:1.6;background:#f8fafc}
+header{background:#fff;box-shadow:0 1px 4px rgba(0,0,0,.06);position:sticky;top:0;z-index:10}
+.nav{max-width:1100px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:1rem 1.5rem}
+.logo{font-weight:800;font-size:1.4rem;color:#0f766e}
+nav a{margin-left:1.5rem;text-decoration:none;color:#334155;font-weight:500}
+nav a:hover{color:#0f766e}
+.hero{background:linear-gradient(135deg,#0f766e,#134e4a);color:#fff;text-align:center;padding:6rem 1.5rem}
+.hero h1{font-size:clamp(2rem,5vw,3.2rem);margin-bottom:1rem}
+.hero p{font-size:1.15rem;max-width:640px;margin:0 auto 2rem;opacity:.92}
+.btn{display:inline-block;background:#fbbf24;color:#1f2933;padding:.9rem 2rem;border-radius:999px;font-weight:700;text-decoration:none}
+section{max-width:1100px;margin:auto;padding:4.5rem 1.5rem}
+h2{font-size:2rem;margin-bottom:1.5rem;text-align:center}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.5rem}
+.card{background:#fff;border-radius:14px;padding:2rem;box-shadow:0 4px 16px rgba(0,0,0,.05)}
+.card h3{color:#0f766e;margin-bottom:.5rem}
+.contact{background:#fff;border-radius:14px;padding:2.5rem;text-align:center;box-shadow:0 4px 16px rgba(0,0,0,.05)}
+footer{text-align:center;padding:2rem;color:#64748b;font-size:.9rem}
+@media(max-width:600px){nav a{margin-left:.8rem;font-size:.9rem}.hero{padding:4rem 1.2rem}}
+</style>
+</head>
+<body>
+<header><div class="nav"><div class="logo">test</div><nav><a href="#apropos">À propos</a><a href="#engagements">Engagements</a><a href="#contact">Contact</a></nav></div></header>
+<div class="hero"><h1>Bienvenue chez test</h1><p>Un service professionnel, à l'écoute de vos besoins et attentif à chaque détail.</p><a class="btn" href="#contact">Nous contacter</a></div>
+<section id="apropos"><h2>À propos</h2><p style="text-align:center;max-width:720px;margin:auto">test accompagne ses clients avec sérieux et réactivité. Chaque projet est traité avec soin, de la première prise de contact jusqu'à sa réalisation.</p></section>
+<section id="engagements"><h2>Nos engagements</h2><div class="cards">
+<div class="card"><h3>Écoute</h3><p>Nous prenons le temps de comprendre votre demande pour vous proposer une solution adaptée.</p></div>
+<div class="card"><h3>Transparence</h3><p>Des échanges clairs et un devis détaillé avant toute intervention.</p></div>
+<div class="card"><h3>Réactivité</h3><p>Une réponse rapide à vos questions et un suivi tout au long du projet.</p></div>
+</div></section>
+<section id="contact"><div class="contact"><h2>Contact</h2><p>Une question, un projet ? Contactez test pour en discuter.</p></div></section>
+<footer>© 2026 test – Site de démonstration</footer>
+</body>
+</html>
