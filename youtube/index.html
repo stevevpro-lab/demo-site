@@ -3,216 +3,154 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>Youtube – Chauffagiste à Clichy (92110)</title>
-<meta name="description" content="Youtube, chauffagiste à Clichy (92110) : installation et remplacement de chaudière, entretien annuel, dépannage, radiateurs et plancher chauffant. 07 32 98 23 93.">
-<meta name="theme-color" content="#10243a">
+<title>Youtube · Chauffagiste à Clichy (92110)</title>
+<meta name="description" content="Youtube, chauffagiste à Clichy : installation et remplacement de chaudière, entretien annuel, dépannage, radiateurs et plancher chauffant. Appelez le 07 32 98 23 93.">
+<meta name="demo-version" content="inspiration-v1">
+<meta name="theme-color" content="#173f33">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --paper:#eef1ee;
-  --card:#ffffff;
-  --line:#cdd5d2;
-  --navy:#10243a;
-  --navy-2:#1a3450;
-  --ink:#10243a;
-  --ink-soft:#43566a;
-  --amber:#f2b33d;
-  --amber-press:#dc9d24;
-  --brass:#8a5a12;
-  --on-navy:#f3f5f2;
-  --on-navy-soft:#b9c6d2;
-  --r:14px;
-  --ease:cubic-bezier(.2,.8,.2,1);
+  --paper:#f7f8f6;
+  --paper-2:#e8ece7;
+  --line:#cfd6cf;
+  --ink:#16221d;
+  --ink-soft:#4a5650;
+  --green:#173f33;
+  --green-2:#215443;
+  --green-press:#0f2e25;
+  --sage:#d5e3d6;
+  --sage-deep:#a9c4ad;
+  --cobalt:#2747b8;
+  --on-green:#f7f8f6;
+  --on-green-soft:#eef4ef;
+  --ease:cubic-bezier(.22,.7,.2,1);
 }
 *,*::before,*::after{box-sizing:border-box}
 *{margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:96px;-webkit-text-size-adjust:100%}
-body{font-family:"Public Sans",ui-sans-serif,system-ui,sans-serif;font-size:1.0625rem;line-height:1.6;color:var(--ink);background:var(--paper)}
-img,svg{display:block}
-a{color:inherit;text-underline-offset:.22em;text-decoration-thickness:1px}
+html{scroll-behavior:smooth;scroll-padding-top:88px;-webkit-text-size-adjust:100%}
+body{font-family:"Hanken Grotesk",ui-sans-serif,system-ui,sans-serif;font-size:1.0625rem;line-height:1.6;color:var(--ink);background:var(--paper)}
+svg{display:block}
+a{color:inherit;text-underline-offset:.2em;text-decoration-thickness:1px}
 ul,ol{list-style:none}
-:focus-visible{outline:3px solid var(--navy);outline-offset:3px;border-radius:6px}
-.dark :focus-visible,.dark:focus-visible{outline-color:var(--amber)}
-h1,h2,h3{font-family:"Bricolage Grotesque",ui-sans-serif,system-ui,sans-serif;font-weight:700;line-height:1.04;letter-spacing:-.025em;text-wrap:balance}
-p{text-wrap:pretty}
-.num{font-variant-numeric:tabular-nums;white-space:nowrap}
-.wrap{width:min(1200px,100%);margin-inline:auto}
-.util,header.top,.hero,section.block,.band,footer{padding-left:24px;padding-right:24px}
-.skip{position:absolute;left:16px;top:-80px;background:var(--navy);color:var(--on-navy);padding:12px 16px;z-index:60;border-radius:8px;font-weight:600}
-.skip:focus{top:16px}
-.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.8125rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--brass)}
-.eyebrow::before{content:"";width:22px;height:2px;background:currentColor}
-.dark .eyebrow{color:var(--amber)}
+h1,h2,h3{font-family:"Young Serif",Georgia,serif;font-weight:400;line-height:1.08;letter-spacing:-.01em;text-wrap:balance}
+p{text-wrap:pretty;max-width:62ch}
+:focus-visible{outline:3px solid var(--cobalt);outline-offset:3px;border-radius:4px}
+.on-dark :focus-visible{outline-color:var(--sage)}
+.nowrap{white-space:nowrap;font-variant-numeric:tabular-nums}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.skip{position:absolute;left:12px;top:-60px;z-index:100;background:var(--ink);color:var(--paper);padding:12px 18px;border-radius:4px;font-weight:600;text-decoration:none}
+.skip:focus{top:12px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 
-/* Buttons */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:12px 22px;border-radius:999px;font-weight:700;font-size:1rem;text-decoration:none;border:2px solid transparent;transition:background-color .2s var(--ease),transform .2s var(--ease),border-color .2s var(--ease)}
-.btn svg{width:18px;height:18px;flex:none}
-.btn-navy{background:var(--navy);color:var(--on-navy)}
-.btn-navy:hover{background:var(--navy-2)}
-.btn-amber{background:var(--amber);color:var(--navy)}
-.btn-amber:hover{background:var(--amber-press)}
-.btn-ghost{border-color:currentColor;color:inherit}
-.btn-ghost:hover{background:rgba(16,36,58,.06)}
-.dark .btn-ghost:hover{background:rgba(255,255,255,.08)}
-.btn:active{transform:translateY(1px)}
+/* Barre d'appel */
+.callbar{background:var(--sage);border-bottom:1px solid var(--sage-deep);font-size:.9375rem}
+.callbar .wrap{padding-top:8px;padding-bottom:8px;display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:48px}
+.callbar p{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.callbar .pill{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;border-radius:999px;background:var(--green);color:var(--on-green);font-weight:700;text-decoration:none}
+.callbar .pill:hover{background:var(--green-press)}
+.callbar .addr{display:flex;align-items:center;gap:8px;color:var(--ink-soft)}
 
-/* Utility bar + header */
-.util{background:var(--navy);color:var(--on-navy-soft);font-size:.875rem;padding-top:4px;padding-bottom:4px}
-.util .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:40px}
-.util a{color:var(--on-navy);font-weight:600;text-decoration:none;display:inline-flex;align-items:center;min-height:40px}
-.util a:hover{text-decoration:underline}
-header.top{position:sticky;top:0;z-index:30;background:rgba(238,241,238,.92);border-bottom:1px solid var(--line)}
-@supports (backdrop-filter:blur(1px)){header.top{background:rgba(238,241,238,.8);backdrop-filter:blur(12px) saturate(1.2)}}
-.top .wrap{display:flex;align-items:center;gap:28px;min-height:76px}
-.brand{display:flex;align-items:center;gap:12px;text-decoration:none;margin-right:auto;min-height:44px}
-.mark{width:40px;height:40px;border-radius:10px;background:var(--navy);display:grid;place-items:center;flex:none}
-.mark svg{width:22px;height:22px}
-.brand b{display:block;font-family:"Bricolage Grotesque",sans-serif;font-size:1.3rem;font-weight:800;letter-spacing:-.02em;line-height:1}
-.brand small{display:block;font-size:.8125rem;color:var(--ink-soft);font-weight:500;margin-top:3px}
-.nav ul{display:flex;gap:4px}
-.nav a{display:inline-flex;align-items:center;min-height:44px;padding:0 14px;border-radius:999px;font-weight:600;font-size:.9375rem;text-decoration:none;color:var(--ink)}
-.nav a:hover{background:rgba(16,36,58,.07)}
-.top .btn{min-height:44px;padding:10px 18px}
+/* En-tête */
+header.site{position:sticky;top:0;z-index:20;background:rgba(247,248,246,.96);border-bottom:1px solid var(--line)}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:72px}
+.brand{display:flex;align-items:baseline;gap:12px;text-decoration:none}
+.brand b{font-family:"Young Serif",Georgia,serif;font-weight:400;font-size:1.625rem;letter-spacing:-.01em}
+.brand span{font-size:.8125rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft)}
+nav ul{display:flex;gap:4px}
+nav a{display:inline-flex;align-items:center;min-height:44px;padding:0 12px;text-decoration:none;font-weight:500;border-radius:4px}
+nav a:hover{background:var(--paper-2)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 22px;border-radius:6px;font-weight:700;text-decoration:none;border:2px solid transparent;transition:background-color .2s var(--ease),color .2s var(--ease),border-color .2s var(--ease)}
+.btn-call{background:var(--green);color:var(--on-green)}
+.btn-call:hover{background:var(--green-press)}
+.btn-line{border-color:var(--ink);color:var(--ink)}
+.btn-line:hover{background:var(--ink);color:var(--paper)}
+header .btn{min-height:44px}
 
 /* Hero */
-.hero{padding-top:72px;padding-bottom:88px}
-.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:stretch}
-.hero h1{font-size:clamp(2.6rem,5.6vw,4.9rem);margin:8px 0 24px}
-.hero h1 em{font-style:normal;color:var(--brass)}
-.lede{font-size:1.1875rem;color:var(--ink-soft);max-width:34ch}
-.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
-.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:40px;padding-top:28px;border-top:1px solid var(--line)}
-.chips li{font-size:.875rem;font-weight:600;padding:8px 14px;border:1px solid var(--line);border-radius:999px;background:var(--card)}
-
-/* Request panel */
-.panel{background:var(--navy);color:var(--on-navy);border-radius:24px;padding:32px;display:flex;flex-direction:column;gap:24px;position:relative;overflow:hidden}
-.panel h2{font-size:1.5rem;letter-spacing:-.015em}
-.panel p.sub{color:var(--on-navy-soft);font-size:.9375rem;margin-top:6px}
-.dialbox{display:flex;align-items:center;gap:20px;padding:20px;border-radius:16px;background:var(--navy-2)}
-.dialbox svg{width:96px;height:96px;flex:none}
-.dialbox span{display:block;font-size:.8125rem;color:var(--on-navy-soft);text-transform:uppercase;letter-spacing:.1em;font-weight:600}
-.dialbox a{font-family:"Bricolage Grotesque",sans-serif;font-size:clamp(1.6rem,2.6vw,2.1rem);font-weight:700;text-decoration:none;color:var(--amber);letter-spacing:-.01em}
-.dialbox a:hover{text-decoration:underline}
-.needs{display:flex;flex-direction:column;border-top:1px solid rgba(255,255,255,.14)}
-.needs a{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:56px;padding:6px 4px;border-bottom:1px solid rgba(255,255,255,.14);text-decoration:none;font-weight:600}
-.needs a svg{width:20px;height:20px;transition:transform .2s var(--ease);color:var(--amber)}
-.needs a:hover svg{transform:translateX(4px)}
-.needs a:hover{color:#fff}
+.hero{padding:72px 0 88px}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:stretch}
+.hero h1{font-size:clamp(2.5rem,5.4vw,4.5rem);margin-bottom:24px}
+.hero h1 em{font-style:normal;color:var(--green-2);text-decoration:underline;text-decoration-color:var(--sage-deep);text-decoration-thickness:.12em;text-underline-offset:.12em}
+.hero .lede{font-size:1.1875rem;color:var(--ink-soft);margin-bottom:28px}
+.brief{border-left:3px solid var(--green);padding:4px 0 4px 18px;margin-bottom:32px;font-size:1rem}
+.brief strong{font-weight:700}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.hero-visual{position:relative;min-height:520px;background:var(--green);border-radius:4px;overflow:hidden}
+.hero-visual svg{position:absolute;inset:0;width:100%;height:100%}
+.tag{position:absolute;left:-1px;bottom:32px;background:var(--paper);color:var(--ink);padding:14px 20px 14px 22px;border-radius:0 4px 4px 0;box-shadow:0 1px 0 var(--line)}
+.tag small{display:block;font-size:.75rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft)}
+.tag a{font-family:"Young Serif",Georgia,serif;font-size:1.5rem;text-decoration:none;display:inline-flex;min-height:44px;align-items:center}
+.tag a:hover{text-decoration:underline}
 
 /* Sections */
-section.block{padding-top:104px;padding-bottom:104px}
-.sec-head{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:56px}
-.sec-head h2{font-size:clamp(2rem,4vw,3.25rem);margin-top:14px}
-.sec-head p{color:var(--ink-soft);max-width:44ch;justify-self:end}
+section.block{padding:88px 0;border-top:1px solid var(--line)}
+.head{display:grid;grid-template-columns:1fr 1.4fr;gap:48px;align-items:end;margin-bottom:48px}
+.head h2{font-size:clamp(2rem,3.6vw,3rem)}
+.head p{color:var(--ink-soft)}
 
-/* Services bento */
-.bento{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
-.svc{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:32px;display:flex;flex-direction:column;gap:14px;min-height:260px}
-.svc .n{font-family:"Bricolage Grotesque",sans-serif;font-weight:600;font-size:.9375rem;color:var(--brass)}
-.svc h3{font-size:1.625rem;letter-spacing:-.02em}
-.svc p{color:var(--ink-soft)}
-.svc ul.ticks{margin-top:auto;display:grid;gap:8px;font-size:.9375rem;font-weight:500}
-.svc ul.ticks li{display:flex;gap:10px;align-items:flex-start}
-.svc ul.ticks svg{width:18px;height:18px;margin-top:3px;flex:none;color:var(--brass)}
-.svc.a{grid-column:span 4}
-.svc.b{grid-column:span 2}
-.svc.c{grid-column:span 2}
-.svc.d{grid-column:span 4}
-.svc.feature{background:var(--navy);color:var(--on-navy);border-color:var(--navy)}
-.svc.feature p{color:var(--on-navy-soft)}
-.svc.feature .n,.svc.feature ul.ticks svg{color:var(--amber)}
-.svc.feature .btn{align-self:flex-start;margin-top:auto}
-.svc .illu{width:100%;max-width:340px;height:auto;margin-top:auto;align-self:flex-end;color:var(--navy)}
+/* Prestations : liste éditoriale */
+.services li{display:grid;grid-template-columns:72px 1fr 1.3fr;gap:32px;align-items:start;padding:28px 0;border-top:1px solid var(--line)}
+.services li:last-child{border-bottom:1px solid var(--line)}
+.services .n{font-family:"Young Serif",Georgia,serif;font-size:1.25rem;color:var(--green-2);font-variant-numeric:tabular-nums}
+.services h3{font-size:1.625rem;display:flex;align-items:center;gap:14px}
+.services h3 svg{flex:none;width:28px;height:28px;color:var(--green-2)}
+.services p{color:var(--ink-soft)}
 
-/* Process */
-.process{background:var(--card);border-block:1px solid var(--line)}
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:0;counter-reset:s}
-.steps li{padding:8px 32px 8px 0;padding-right:32px;margin-right:32px;border-right:1px solid var(--line);counter-increment:s}
-.steps li:last-child{border-right:0;margin-right:0}
-.steps li::before{content:"0" counter(s);display:block;font-family:"Bricolage Grotesque",sans-serif;font-size:3.5rem;font-weight:800;line-height:1;color:var(--navy);letter-spacing:-.04em;margin-bottom:28px}
-.steps h3{font-size:1.375rem;margin-bottom:10px}
-.steps p{color:var(--ink-soft)}
+/* Symptômes */
+.signs{background:var(--green);color:var(--on-green);border-top:0}
+.signs .head p{color:var(--on-green-soft)}
+.signs ul{display:grid;grid-template-columns:repeat(2,1fr);gap:0 48px}
+.signs li{display:flex;gap:16px;align-items:flex-start;padding:20px 0;border-top:1px solid rgba(247,248,246,.24);font-size:1.125rem}
+.signs li svg{flex:none;width:24px;height:24px;margin-top:3px;color:var(--sage)}
+.signs .cta{margin-top:44px;display:flex;flex-wrap:wrap;align-items:center;gap:20px}
+.signs .btn-light{background:var(--paper);color:var(--green)}
+.signs .btn-light:hover{background:var(--sage)}
 
-/* FAQ */
-.faq-wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px}
-.faq-wrap h2{font-size:clamp(2rem,4vw,3.25rem);margin-top:14px}
-.faq-wrap .side p{color:var(--ink-soft);margin-top:18px;max-width:34ch}
-details{border-bottom:1px solid var(--line)}
-details:first-child{border-top:1px solid var(--line)}
-summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:72px;padding:12px 0;font-family:"Bricolage Grotesque",sans-serif;font-weight:600;font-size:1.25rem;letter-spacing:-.01em}
-summary::-webkit-details-marker{display:none}
-summary .pm{width:32px;height:32px;border-radius:50%;border:1.5px solid var(--navy);display:grid;place-items:center;flex:none;transition:transform .25s var(--ease)}
-summary .pm svg{width:14px;height:14px}
-details[open] summary .pm{transform:rotate(45deg);background:var(--navy);color:var(--on-navy)}
-details p{padding:0 48px 24px 0;color:var(--ink-soft)}
-
-/* CTA band */
-.band{background:var(--navy);color:var(--on-navy);padding-top:96px;padding-bottom:96px}
-.band .wrap{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:end}
-.band h2{font-size:clamp(2.2rem,5vw,4rem);max-width:14ch;margin-top:14px}
-.band p{color:var(--on-navy-soft);margin-top:16px;max-width:40ch}
-.band .big{font-family:"Bricolage Grotesque",sans-serif;font-size:clamp(2rem,4.6vw,3.6rem);font-weight:700;color:var(--amber);text-decoration:none;letter-spacing:-.02em;display:inline-block;margin-bottom:18px}
-.band .big:hover{text-decoration:underline;text-decoration-thickness:3px}
-.band .right{display:flex;flex-direction:column;align-items:flex-start}
+/* Préparer l'appel */
+.prep{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;counter-reset:p}
+.prep li{counter-increment:p;padding-top:20px;border-top:3px solid var(--ink)}
+.prep li::before{content:"Étape " counter(p);display:block;font-size:.8125rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--green-2);margin-bottom:10px}
+.prep h3{font-size:1.375rem;margin-bottom:8px}
+.prep p{color:var(--ink-soft)}
 
 /* Contact */
-.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.cinfo{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:28px;display:flex;flex-direction:column;gap:10px}
-.cinfo dt{font-size:.8125rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft)}
-.cinfo dd{font-family:"Bricolage Grotesque",sans-serif;font-size:1.375rem;font-weight:600;letter-spacing:-.01em;line-height:1.3}
-.cinfo dd address{font-style:normal}
-.cinfo .sub{display:block;font-family:"Public Sans",sans-serif;font-size:.9375rem;font-weight:400;color:var(--ink-soft);margin-top:4px}
-.cinfo .act{margin-top:auto;padding-top:14px}
-.cinfo .act a{display:inline-flex;align-items:center;gap:8px;min-height:44px;font-weight:700;font-size:.9375rem}
+.contact .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:64px;align-items:start}
+.contact h2{font-size:clamp(2.25rem,4vw,3.5rem);margin-bottom:20px}
+.bigtel{display:inline-flex;align-items:center;gap:14px;min-height:56px;font-family:"Young Serif",Georgia,serif;font-size:clamp(1.75rem,4vw,2.75rem);color:var(--green);text-decoration:none;margin:12px 0 20px}
+.bigtel:hover{text-decoration:underline}
+.bigtel svg{width:36px;height:36px}
+.card{background:var(--paper-2);border-radius:4px;padding:32px}
+.card dt{font-size:.8125rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);margin-top:20px}
+.card dt:first-child{margin-top:0}
+.card dd{font-size:1.125rem;margin-top:4px}
+.card dd a{display:inline-flex;align-items:center;min-height:44px}
 
-/* Footer */
-footer{padding-top:56px;padding-bottom:40px;border-top:1px solid var(--line)}
-footer .grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}
-footer h3{font-family:"Public Sans",sans-serif;font-size:.8125rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:12px}
-footer li a{display:inline-flex;align-items:center;min-height:44px;text-decoration:none;font-weight:500}
-footer li a:hover{text-decoration:underline}
-footer .about p{color:var(--ink-soft);max-width:36ch;margin-top:14px;font-size:.9375rem}
-footer .legal{margin-top:40px;padding-top:24px;border-top:1px solid var(--line);font-size:.875rem;color:var(--ink-soft);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer{border-top:1px solid var(--line);padding:32px 0 40px;font-size:.9375rem;color:var(--ink-soft)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px}
 
-/* Mobile call bar */
-.callbar{display:none}
+/* Appel mobile */
+.mobile-call{display:none}
 
-@media (max-width:1000px){
-  .hero .wrap{grid-template-columns:1fr;gap:40px}
-  .sec-head,.faq-wrap{grid-template-columns:1fr;gap:20px}
-  .sec-head p{justify-self:start}
-  .faq-wrap{gap:32px}
-  .svc.a,.svc.b,.svc.c,.svc.d{grid-column:span 3}
-  .contact-grid{grid-template-columns:1fr 1fr}
-  .contact-grid .cinfo:last-child{grid-column:span 2}
+@media (max-width:960px){
+  nav{display:none}
+  .hero .wrap,.contact .wrap,.head{grid-template-columns:1fr;gap:32px}
+  .hero{padding:48px 0 64px}
+  .hero-visual{min-height:360px}
+  .services li{grid-template-columns:48px 1fr;gap:8px 16px}
+  .services li p{grid-column:2}
+  .prep{grid-template-columns:1fr;gap:28px}
 }
-@media (max-width:760px){
-  .nav,.top .btn,.util .zone{display:none}
-  .util .wrap{justify-content:center}
-  .top .wrap{min-height:64px}
-  .hero{padding-top:44px;padding-bottom:64px}
-  .panel{padding:24px;border-radius:20px}
-  .dialbox{padding:16px;gap:14px}
-  .dialbox svg{width:72px;height:72px}
-  section.block{padding-top:72px;padding-bottom:72px}
-  .bento{grid-template-columns:1fr}
-  .svc.a,.svc.b,.svc.c,.svc.d{grid-column:auto}
-  .svc{padding:26px;min-height:0}
-  .steps{grid-template-columns:1fr;gap:36px}
-  .steps li{border-right:0;margin-right:0;padding:0 16px 32px 0;border-bottom:1px solid var(--line)}
-  .steps li:last-child{border-bottom:0;padding-bottom:0}
-  .steps li::before{font-size:2.75rem;margin-bottom:16px}
-  details p{padding-right:0}
-  .band{padding-top:72px;padding-bottom:72px}
-  .band .wrap{grid-template-columns:1fr}
-  .contact-grid{grid-template-columns:1fr}
-  .contact-grid .cinfo:last-child{grid-column:auto}
-  footer .grid{grid-template-columns:1fr;gap:28px}
-  footer{padding-bottom:110px}
-  .callbar{display:block;position:fixed;left:0;right:0;bottom:0;z-index:40;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:rgba(238,241,238,.95);border-top:1px solid var(--line)}
-  .callbar .btn{width:100%;min-height:52px}
+@media (max-width:640px){
+  .callbar .addr{display:none}
+  .callbar .wrap{justify-content:center}
+  .callbar .lbl{display:none}
+  header .btn{display:none}
+  .signs ul{grid-template-columns:1fr}
+  section.block{padding:64px 0}
+  .mobile-call{display:flex;position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:30;min-height:56px;font-size:1.0625rem;box-shadow:0 2px 0 var(--green-press)}
+  body{padding-bottom:84px}
 }
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
@@ -223,218 +161,145 @@ footer .legal{margin-top:40px;padding-top:24px;border-top:1px solid var(--line);
 <body>
 <a class="skip" href="#contenu">Aller au contenu</a>
 
-<div class="util dark">
+<div class="callbar">
   <div class="wrap">
-    <span class="zone">Chauffagiste à Clichy et dans les communes voisines</span>
-    <a href="tel:+33732982393">Appeler le&nbsp;<span class="num">07 32 98 23 93</span></a>
+    <p><span class="lbl">Chauffage en panne&nbsp;? Un appel suffit&nbsp;:</span>
+      <a class="pill" href="tel:+33732982393">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
+        <span class="nowrap">07 32 98 23 93</span></a></p>
+    <p class="addr">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+      9 rue de la oire, 92110 Clichy</p>
   </div>
 </div>
 
-<header class="top">
+<header class="site">
   <div class="wrap">
-    <a href="#" class="brand" aria-label="Youtube, chauffagiste à Clichy – accueil">
-      <span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#f2b33d" stroke-width="2" stroke-linecap="round"><path d="M5 20V8M9.7 20V4M14.3 20V4M19 20V8"/><path d="M3 20h18"/></svg></span>
-      <span><b>Youtube</b><small>Chauffagiste · Clichy</small></span>
-    </a>
-    <nav class="nav" aria-label="Navigation principale">
+    <a class="brand" href="#top" aria-label="Youtube, chauffagiste, retour en haut de page"><b>Youtube</b><span>Chauffagiste</span></a>
+    <nav aria-label="Navigation principale">
       <ul>
-        <li><a href="#services">Prestations</a></li>
-        <li><a href="#methode">Méthode</a></li>
-        <li><a href="#questions">Questions</a></li>
+        <li><a href="#prestations">Prestations</a></li>
+        <li><a href="#signes">Quand appeler</a></li>
+        <li><a href="#preparer">Préparer l'appel</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <a href="tel:+33732982393" class="btn btn-navy">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
-      <span class="num">07 32 98 23 93</span>
-    </a>
+    <a class="btn btn-call" href="tel:+33732982393"><span class="nowrap">07 32 98 23 93</span></a>
   </div>
 </header>
 
 <main id="contenu">
-  <section class="hero" aria-labelledby="titre">
+  <section class="hero" id="top" aria-labelledby="titre">
     <div class="wrap">
       <div>
-        <h1 id="titre">Un chauffage qui démarre, <em>tout l'hiver.</em></h1>
-        <p class="lede">Chaudière à remplacer, entretien à programmer ou panne à régler&nbsp;: un seul interlocuteur pour votre installation, de l'appel à la remise en route.</p>
-        <div class="hero-cta">
-          <a href="tel:+33732982393" class="btn btn-navy">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
-            Appeler maintenant
-          </a>
-          <a href="#services" class="btn btn-ghost">Voir les prestations</a>
+        <h1 id="titre">Chauffagiste à Clichy&nbsp;: la chaleur revient, <em>sans détour</em>.</h1>
+        <p class="lede">Chaudière à poser ou à remplacer, entretien de chaque année, panne à régler, radiateurs ou plancher chauffant&nbsp;: vous parlez directement au chauffagiste qui viendra chez vous.</p>
+        <p class="brief"><strong>L'essentiel&nbsp;:</strong> un seul numéro, le <a href="tel:+33732982393" class="nowrap">07 32 98 23 93</a>, et une adresse à Clichy&nbsp;: 9 rue de la oire.</p>
+        <div class="actions">
+          <a class="btn btn-call" href="tel:+33732982393">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
+            Appeler le chauffagiste</a>
+          <a class="btn btn-line" href="#prestations">Voir les prestations</a>
         </div>
-        <ul class="chips" aria-label="Prestations">
-          <li>Chaudière</li><li>Entretien annuel</li><li>Dépannage</li><li>Radiateurs</li><li>Plancher chauffant</li>
-        </ul>
       </div>
-
-      <aside class="panel dark" aria-labelledby="t-panel">
-        <div>
-          <h2 id="t-panel">Quel est votre besoin&nbsp;?</h2>
-          <p class="sub">Choisissez, puis appelez&nbsp;: on en parle directement.</p>
-        </div>
-        <div class="dialbox">
-          <svg viewBox="0 0 100 100" aria-hidden="true">
-            <circle cx="50" cy="50" r="44" fill="none" stroke="#2c4867" stroke-width="6"/>
-            <path d="M18.9 81.1A44 44 0 1 1 88.1 72" fill="none" stroke="#f2b33d" stroke-width="6" stroke-linecap="round"/>
-            <circle cx="50" cy="50" r="30" fill="#10243a"/>
-            <path d="M50 50 L71 35" stroke="#f3f5f2" stroke-width="4" stroke-linecap="round"/>
-            <circle cx="50" cy="50" r="5" fill="#f3f5f2"/>
-          </svg>
-          <div>
-            <span>Ligne directe</span>
-            <a class="num" href="tel:+33732982393">07 32 98 23 93</a>
-          </div>
-        </div>
-        <nav class="needs" aria-label="Accès rapide aux prestations">
-          <a href="#svc-chaudiere">Installer ou remplacer une chaudière<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-          <a href="#svc-entretien">Programmer l'entretien annuel<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-          <a href="#svc-depannage">Signaler une panne<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-          <a href="#svc-emetteurs">Radiateurs ou plancher chauffant<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        </nav>
-      </aside>
-    </div>
-  </section>
-
-  <section id="services" class="block" aria-labelledby="t-services" style="padding-top:24px">
-    <div class="wrap">
-      <div class="sec-head">
-        <div>
-          <span class="eyebrow">Prestations</span>
-          <h2 id="t-services">Du neuf, de l'entretien, du dépannage.</h2>
-        </div>
-        <p>Nous intervenons sur l'ensemble de votre installation de chauffage, chez les particuliers comme chez les professionnels.</p>
-      </div>
-
-      <div class="bento">
-        <article class="svc a" id="svc-chaudiere">
-          <span class="n">01</span>
-          <h3>Installation et remplacement de chaudière</h3>
-          <p>Choix d'un équipement adapté à votre logement, dépose de l'ancien appareil, pose, raccordement et mise en service.</p>
-          <svg class="illu" viewBox="0 0 340 90" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-            <rect x="1" y="6" width="74" height="82" rx="8"/><rect x="14" y="20" width="48" height="18" rx="3"/><circle cx="38" cy="62" r="9"/>
-            <path d="M75 30h60M75 58h60" stroke-dasharray="4 6"/>
-            <rect x="135" y="18" width="204" height="56" rx="6"/>
-            <path d="M163 18v56M191 18v56M219 18v56M247 18v56M275 18v56M303 18v56"/>
-          </svg>
-        </article>
-
-        <article class="svc b" id="svc-entretien">
-          <span class="n">02</span>
-          <h3>Entretien annuel</h3>
-          <p>Contrôle, nettoyage et réglages pour la sécurité et le bon fonctionnement de votre chaudière.</p>
-          <ul class="ticks">
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Vérification des organes de sécurité</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Nettoyage et réglages</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Attestation d'entretien remise</li>
-          </ul>
-        </article>
-
-        <article class="svc c feature dark" id="svc-depannage">
-          <span class="n">03</span>
-          <h3>Dépannage</h3>
-          <p>Plus de chauffage ou d'eau chaude&nbsp;? Nous diagnostiquons la panne et remettons votre installation en route.</p>
-          <a href="tel:+33732982393" class="btn btn-amber">Signaler une panne</a>
-        </article>
-
-        <article class="svc d" id="svc-emetteurs">
-          <span class="n">04</span>
-          <h3>Radiateurs et plancher chauffant</h3>
-          <p>Pose, remplacement et équilibrage des émetteurs de chaleur, pour une température homogène pièce par pièce.</p>
-          <ul class="ticks">
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Ajout ou remplacement de radiateurs</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Plancher chauffant hydraulique</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Désembouage et équilibrage du réseau</li>
-          </ul>
-        </article>
+      <div class="hero-visual on-dark">
+        <svg viewBox="0 0 400 560" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false">
+          <rect width="400" height="560" fill="#173f33"/>
+          <path d="M0 470 H400" stroke="#215443" stroke-width="2"/>
+          <g fill="none" stroke="#a9c4ad" stroke-width="2.5">
+            <rect x="70" y="250" width="260" height="190" rx="10"/>
+            <path d="M104 262v166M140 262v166M176 262v166M212 262v166M248 262v166M284 262v166"/>
+            <path d="M70 290h-26v180M330 410h26v60"/>
+            <circle cx="44" cy="300" r="9"/>
+          </g>
+          <g fill="none" stroke="#d5e3d6" stroke-width="2" stroke-linecap="round" opacity=".9">
+            <path d="M120 230c-12-16 12-26 0-44s12-28 0-46"/>
+            <path d="M200 226c-12-16 12-26 0-44s12-28 0-46"/>
+            <path d="M280 230c-12-16 12-26 0-44s12-28 0-46"/>
+          </g>
+          <g transform="translate(300 96)">
+            <circle r="44" fill="#f7f8f6"/>
+            <circle r="32" fill="none" stroke="#173f33" stroke-width="2"/>
+            <path d="M0 0 L20 -20" stroke="#173f33" stroke-width="4" stroke-linecap="round"/>
+            <circle r="5" fill="#173f33"/>
+          </g>
+        </svg>
+        <div class="tag"><small>Ligne directe</small><a href="tel:+33732982393" class="nowrap">07 32 98 23 93</a></div>
       </div>
     </div>
   </section>
 
-  <section id="methode" class="block process" aria-labelledby="t-methode">
+  <section class="block" id="prestations" aria-labelledby="t-prest">
     <div class="wrap">
-      <div class="sec-head">
-        <div>
-          <span class="eyebrow">Méthode</span>
-          <h2 id="t-methode">Trois étapes, sans surprise.</h2>
-        </div>
-        <p>Une façon de travailler simple, que ce soit pour une installation neuve ou un dépannage.</p>
+      <div class="head">
+        <h2 id="t-prest">Ce que nous prenons en charge</h2>
+        <p>Quatre métiers du chauffage, pour la maison comme pour l'appartement. Dites-nous ce qui se passe, on vous dit comment on s'y prend.</p>
       </div>
-      <ol class="steps">
-        <li><h3>Vous appelez</h3><p>Vous décrivez votre besoin ou votre panne, nous convenons ensemble d'un passage.</p></li>
-        <li><h3>Diagnostic et devis</h3><p>Nous examinons l'installation et vous remettons un chiffrage clair avant toute intervention.</p></li>
-        <li><h3>Intervention soignée</h3><p>Travail propre, dans le respect de votre intérieur, avec des conseils adaptés à votre logement.</p></li>
+      <ul class="services">
+        <li><span class="n">01</span>
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 7h6M12 13v4M10 15h4"/></svg>Chaudière&nbsp;: installation et remplacement</h3>
+          <p>Choix de l'appareil adapté à votre logement, dépose de l'ancienne chaudière, pose, raccordement et mise en service.</p></li>
+        <li><span class="n">02</span>
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3v4M16 3v4M4 9h16M5 5h14a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z"/><path d="m9 15 2 2 4-4"/></svg>Entretien annuel</h3>
+          <p>La visite de chaque année&nbsp;: nettoyage, contrôles, réglages, et l'attestation d'entretien à conserver.</p></li>
+        <li><span class="n">03</span>
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.2L3 17.8V21h3.2l6.3-6.3a4 4 0 0 0 5.2-5.4l-2.5 2.5-2.5-.5-.5-2.5z"/></svg>Dépannage</h3>
+          <p>Chaudière à l'arrêt, plus d'eau chaude, radiateurs froids&nbsp;: diagnostic sur place et remise en route.</p></li>
+        <li><span class="n">04</span>
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6v12M9 6v12M14 6v12M19 6v12M2 9h20M2 15h20"/></svg>Radiateurs et plancher chauffant</h3>
+          <p>Ajout, remplacement ou équilibrage de radiateurs, pose et réglage de plancher chauffant.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block signs on-dark" id="signes" aria-labelledby="t-signes">
+    <div class="wrap">
+      <div class="head">
+        <h2 id="t-signes">Les signes qui doivent vous faire appeler</h2>
+        <p>Inutile d'attendre que tout s'arrête. Si vous reconnaissez l'une de ces situations, un coup de fil permet souvent d'y voir clair.</p>
+      </div>
+      <ul>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>La chaudière se met en sécurité ou affiche un code d'erreur.</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>Un ou plusieurs radiateurs restent froids, ou chauffent seulement en haut.</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>La pression baisse régulièrement sur le manomètre.</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>Des bruits inhabituels&nbsp;: claquements, sifflements, glouglous.</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>L'eau chaude met longtemps à arriver ou devient tiède.</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>Le dernier entretien de la chaudière date de plus d'un an.</li>
+      </ul>
+      <div class="cta">
+        <a class="btn btn-light" href="tel:+33732982393">Appeler le <span class="nowrap">07 32 98 23 93</span></a>
+        <span>Une odeur de gaz&nbsp;? Sortez du logement et appelez d'abord le 112.</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="preparer" aria-labelledby="t-prep">
+    <div class="wrap">
+      <div class="head">
+        <h2 id="t-prep">Pour un appel efficace</h2>
+        <p>Trois informations simples nous aident à comprendre la situation avant de venir.</p>
+      </div>
+      <ol class="prep">
+        <li><h3>La marque et le modèle</h3><p>Ils figurent en général sur une plaque à l'avant ou sous la chaudière.</p></li>
+        <li><h3>Ce que vous observez</h3><p>Code affiché, bruit, pression, pièces concernées&nbsp;: tout détail compte.</p></li>
+        <li><h3>Vos disponibilités</h3><p>On convient ensemble d'un créneau de passage à votre adresse.</p></li>
       </ol>
     </div>
   </section>
 
-  <section id="questions" class="block" aria-labelledby="t-faq">
-    <div class="wrap faq-wrap">
-      <div class="side">
-        <span class="eyebrow">Questions</span>
-        <h2 id="t-faq">Avant de nous appeler</h2>
-        <p>Quelques réponses rapides. Pour tout le reste, le plus simple reste de téléphoner.</p>
-      </div>
-      <div>
-        <details>
-          <summary>Pourquoi faire entretenir sa chaudière chaque année&nbsp;?<span class="pm" aria-hidden="true"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 1v12M1 7h12"/></svg></span></summary>
-          <p>L'entretien annuel est obligatoire pour les chaudières. Il permet de contrôler la sécurité de l'appareil, de limiter les pannes et de conserver un bon rendement.</p>
-        </details>
-        <details>
-          <summary>Ma chaudière ne démarre plus, que faire&nbsp;?<span class="pm" aria-hidden="true"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 1v12M1 7h12"/></svg></span></summary>
-          <p>Vérifiez l'alimentation électrique, la pression indiquée sur l'appareil et le thermostat. Si le problème persiste, appelez-nous en notant le message ou le code d'erreur affiché.</p>
-        </details>
-        <details>
-          <summary>Faut-il remplacer ou réparer une vieille chaudière&nbsp;?<span class="pm" aria-hidden="true"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 1v12M1 7h12"/></svg></span></summary>
-          <p>Cela dépend de son état, de la disponibilité des pièces et de vos besoins. Après diagnostic, nous vous présentons les deux options pour que vous puissiez choisir.</p>
-        </details>
-        <details>
-          <summary>Intervenez-vous sur les radiateurs et le plancher chauffant&nbsp;?<span class="pm" aria-hidden="true"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 1v12M1 7h12"/></svg></span></summary>
-          <p>Oui&nbsp;: ajout, remplacement, purge et équilibrage des radiateurs, ainsi que l'installation de plancher chauffant hydraulique.</p>
-        </details>
-      </div>
-    </div>
-  </section>
-
-  <section class="band dark" aria-labelledby="t-band">
+  <section class="block contact" id="contact" aria-labelledby="t-contact">
     <div class="wrap">
       <div>
-        <span class="eyebrow">Clichy et environs</span>
-        <h2 id="t-band">Besoin d'un chauffagiste&nbsp;?</h2>
-        <p>Pour une installation, un entretien ou une panne, appelez directement.</p>
+        <h2 id="t-contact">Parlons de votre chauffage.</h2>
+        <p>Le plus simple reste le téléphone&nbsp;: expliquez-nous votre besoin, on vous répond directement.</p>
+        <a class="bigtel" href="tel:+33732982393">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
+          <span class="nowrap">07 32 98 23 93</span></a>
       </div>
-      <div class="right">
-        <a class="big num" href="tel:+33732982393">07 32 98 23 93</a>
-        <a href="tel:+33732982393" class="btn btn-amber">Appeler maintenant</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="block" aria-labelledby="t-contact">
-    <div class="wrap">
-      <div class="sec-head">
-        <div>
-          <span class="eyebrow">Contact</span>
-          <h2 id="t-contact">Nous trouver</h2>
-        </div>
-        <p>Basé à Clichy, nous intervenons dans la commune et les environs.</p>
-      </div>
-      <dl class="contact-grid">
-        <div class="cinfo">
-          <dt>Téléphone</dt>
-          <dd class="num">07 32 98 23 93</dd>
-          <div class="act"><a href="tel:+33732982393">Appeler<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
-        </div>
-        <div class="cinfo">
-          <dt>Adresse</dt>
-          <dd><address>9 rue de la oire<br>92110 Clichy</address></dd>
-          <div class="act"><a href="https://www.google.com/maps/search/?api=1&amp;query=9%20rue%20de%20la%20oire%2092110%20Clichy" target="_blank" rel="noopener">Ouvrir dans Maps<span class="visually-hidden" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)"> (nouvel onglet)</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a></div>
-        </div>
-        <div class="cinfo">
-          <dt>Zone d'intervention</dt>
-          <dd>Clichy et ses environs<span class="sub">Hauts-de-Seine (92)</span></dd>
-        </div>
+      <dl class="card">
+        <dt>Entreprise</dt><dd>Youtube, chauffagiste</dd>
+        <dt>Adresse</dt><dd>9 rue de la oire, 92110 Clichy<br><a href="https://www.openstreetmap.org/search?query=9%20rue%20de%20la%20oire%2C%2092110%20Clichy" rel="noopener">Voir sur la carte</a></dd>
+        <dt>Téléphone</dt><dd><a href="tel:+33732982393" class="nowrap">07 32 98 23 93</a></dd>
       </dl>
     </div>
   </section>
@@ -442,41 +307,15 @@ footer .legal{margin-top:40px;padding-top:24px;border-top:1px solid var(--line);
 
 <footer>
   <div class="wrap">
-    <div class="grid">
-      <div class="about">
-        <a href="#" class="brand" aria-label="Youtube – retour en haut">
-          <span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#f2b33d" stroke-width="2" stroke-linecap="round"><path d="M5 20V8M9.7 20V4M14.3 20V4M19 20V8"/><path d="M3 20h18"/></svg></span>
-          <span><b>Youtube</b><small>Chauffagiste · Clichy</small></span>
-        </a>
-        <p>Installation, entretien et dépannage de chauffage à Clichy et dans les communes voisines.</p>
-      </div>
-      <nav aria-label="Pied de page">
-        <h3>Navigation</h3>
-        <ul>
-          <li><a href="#services">Prestations</a></li>
-          <li><a href="#methode">Méthode</a></li>
-          <li><a href="#questions">Questions</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <div>
-        <h3>Coordonnées</h3>
-        <ul>
-          <li><a class="num" href="tel:+33732982393">07 32 98 23 93</a></li>
-          <li><span style="display:inline-flex;min-height:44px;align-items:center">9 rue de la oire, 92110 Clichy</span></li>
-        </ul>
-      </div>
-    </div>
-    <div class="legal">
-      <span>© <span id="annee">2026</span> Youtube · Chauffagiste à Clichy</span>
-      <span>Site de démonstration</span>
-    </div>
+    <span>© <span id="annee">2026</span> Youtube, chauffagiste à Clichy</span>
+    <span>9 rue de la oire, 92110 Clichy · <a href="tel:+33732982393" class="nowrap">07 32 98 23 93</a></span>
   </div>
 </footer>
 
-<div class="callbar"><a href="tel:+33732982393" class="btn btn-navy">
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
-  Appeler le&nbsp;<span class="num">07 32 98 23 93</span></a></div>
+<a class="btn btn-call mobile-call" href="tel:+33732982393">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
+  Appeler&nbsp;: <span class="nowrap">07 32 98 23 93</span></a>
+
 <script>document.getElementById('annee').textContent=new Date().getFullYear();</script>
 </body>
 </html>
