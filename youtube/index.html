@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Youtube · Chauffagiste à Clichy (92110)</title>
 <meta name="description" content="Youtube, chauffagiste à Clichy : installation et remplacement de chaudière, entretien annuel, dépannage, radiateurs et plancher chauffant. Appelez le 07 32 98 23 93.">
-<meta name="demo-version" content="inspiration-v1">
+<meta name="demo-version" content="inspiration-v2-images">
 <meta name="theme-color" content="#173f33">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -78,11 +78,17 @@ header .btn{min-height:44px}
 .brief strong{font-weight:700}
 .actions{display:flex;flex-wrap:wrap;gap:12px}
 .hero-visual{position:relative;min-height:520px;background:var(--green);border-radius:4px;overflow:hidden}
-.hero-visual svg{position:absolute;inset:0;width:100%;height:100%}
+.hero-visual img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:62% 50%}
 .tag{position:absolute;left:-1px;bottom:32px;background:var(--paper);color:var(--ink);padding:14px 20px 14px 22px;border-radius:0 4px 4px 0;box-shadow:0 1px 0 var(--line)}
 .tag small{display:block;font-size:.75rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft)}
 .tag a{font-family:"Young Serif",Georgia,serif;font-size:1.5rem;text-decoration:none;display:inline-flex;min-height:44px;align-items:center}
 .tag a:hover{text-decoration:underline}
+
+/* Images d'ambiance */
+.band{margin:0 auto;padding-bottom:88px}
+.band img{display:block;width:100%;height:auto;aspect-ratio:21/9;object-fit:cover;object-position:50% 60%;border-radius:4px;background:var(--paper-2)}
+.contact-aside{display:grid;gap:24px}
+.contact-aside img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;object-position:50% 45%;border-radius:4px;background:var(--paper-2)}
 
 /* Sections */
 section.block{padding:88px 0;border-top:1px solid var(--line)}
@@ -149,6 +155,8 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px}
   header .btn{display:none}
   .signs ul{grid-template-columns:1fr}
   section.block{padding:64px 0}
+  .band{padding-bottom:64px}
+  .band img{aspect-ratio:4/3}
   .mobile-call{display:flex;position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:30;min-height:56px;font-size:1.0625rem;box-shadow:0 2px 0 var(--green-press)}
   body{padding-bottom:84px}
 }
@@ -203,27 +211,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px}
         </div>
       </div>
       <div class="hero-visual on-dark">
-        <svg viewBox="0 0 400 560" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false">
-          <rect width="400" height="560" fill="#173f33"/>
-          <path d="M0 470 H400" stroke="#215443" stroke-width="2"/>
-          <g fill="none" stroke="#a9c4ad" stroke-width="2.5">
-            <rect x="70" y="250" width="260" height="190" rx="10"/>
-            <path d="M104 262v166M140 262v166M176 262v166M212 262v166M248 262v166M284 262v166"/>
-            <path d="M70 290h-26v180M330 410h26v60"/>
-            <circle cx="44" cy="300" r="9"/>
-          </g>
-          <g fill="none" stroke="#d5e3d6" stroke-width="2" stroke-linecap="round" opacity=".9">
-            <path d="M120 230c-12-16 12-26 0-44s12-28 0-46"/>
-            <path d="M200 226c-12-16 12-26 0-44s12-28 0-46"/>
-            <path d="M280 230c-12-16 12-26 0-44s12-28 0-46"/>
-          </g>
-          <g transform="translate(300 96)">
-            <circle r="44" fill="#f7f8f6"/>
-            <circle r="32" fill="none" stroke="#173f33" stroke-width="2"/>
-            <path d="M0 0 L20 -20" stroke="#173f33" stroke-width="4" stroke-linecap="round"/>
-            <circle r="5" fill="#173f33"/>
-          </g>
-        </svg>
+        <img src="img/chaudiere.webp" width="1152" height="864" alt="Chaudière murale blanche et ses raccords en cuivre dans une buanderie claire aux murs vert sauge" fetchpriority="high" decoding="async">
         <div class="tag"><small>Ligne directe</small><a href="tel:+33732982393" class="nowrap">07 32 98 23 93</a></div>
       </div>
     </div>
@@ -251,6 +239,10 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px}
       </ul>
     </div>
   </section>
+
+  <div class="wrap band">
+    <img src="img/radiateur.webp" width="1280" height="720" alt="Radiateur en fonte blanc sous une fenêtre dans un appartement ancien au parquet en chevrons, à côté d'un fauteuil vert" loading="lazy" decoding="async">
+  </div>
 
   <section class="block signs on-dark" id="signes" aria-labelledby="t-signes">
     <div class="wrap">
@@ -296,11 +288,14 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px}
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
           <span class="nowrap">07 32 98 23 93</span></a>
       </div>
+      <div class="contact-aside">
+        <img src="img/thermostat.webp" width="1152" height="864" alt="Main réglant la tête thermostatique d'un radiateur blanc" loading="lazy" decoding="async">
       <dl class="card">
         <dt>Entreprise</dt><dd>Youtube, chauffagiste</dd>
         <dt>Adresse</dt><dd>9 rue de la oire, 92110 Clichy<br><a href="https://www.openstreetmap.org/search?query=9%20rue%20de%20la%20oire%2C%2092110%20Clichy" rel="noopener">Voir sur la carte</a></dd>
         <dt>Téléphone</dt><dd><a href="tel:+33732982393" class="nowrap">07 32 98 23 93</a></dd>
       </dl>
+      </div>
     </div>
   </section>
 </main>
