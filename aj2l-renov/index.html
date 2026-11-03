@@ -146,9 +146,6 @@ header.site .wrap{display:flex;align-items:center;gap:1rem;min-height:76px}
 .field input:focus-visible,.field select:focus-visible{outline:3px solid var(--ink);outline-offset:1px;border-color:var(--ink)}
 .field-submit{display:flex;align-items:flex-end}
 .field-submit .btn{width:100%;min-height:50px}
-.demo-note{display:flex;gap:.65rem;align-items:flex-start;margin:1.2rem 0 0;padding:.8rem 1rem;background:#FFF6DA;border-left:4px solid var(--yellow-d);border-radius:4px;font-size:.98rem;color:var(--ink)}
-.demo-note svg{width:20px;height:20px;margin-top:.15rem}
-.demo-note a{font-weight:700}
 .form-status{margin:.8rem 0 0;font-weight:600}
 .form-status:empty{display:none}
 @media (max-width:900px){.fields{grid-template-columns:repeat(2,minmax(0,1fr))}}
@@ -379,9 +376,8 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:.5rem 2rem;justify-content:space-be
           </div>
           <div class="field"><label for="f-ville">Votre commune</label><input id="f-ville" name="commune" type="text" autocomplete="address-level2"></div>
           <div class="field"><label for="f-projet">Votre projet en quelques mots</label><input id="f-projet" name="projet" type="text"></div>
-          <div class="field field-submit"><button class="btn btn-yellow" type="button" id="quote-btn" aria-describedby="demo-note">Envoyer la demande</button></div>
+          <div class="field field-submit"><button class="btn btn-yellow" type="button" id="quote-btn">Envoyer la demande</button></div>
         </div>
-        <p class="demo-note" id="demo-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16.5v.5"/></svg><span>Formulaire de démonstration : aucune donnée n’est envoyée. Pour un devis, appelez le <a href="tel:+33678176061">06 78 17 60 61</a>.</span></p>
         <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
       </form>
     </div>
