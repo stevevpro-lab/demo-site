@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AJ2L Renov – Électricité et peinture décoration à Bernes-sur-Oise</title>
+<meta name="description" content="AJ2L Renov, électricien et peintre décorateur à Bernes-sur-Oise (95340) : travaux d’électricité, peinture intérieure et décoration autour de Bernes-sur-Oise.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<link rel="preload" as="image" href="img/illustration-mur-peint.webp">
+<style>
+:root{
+  --ink:#1F2A2E; --ink-2:#3B474B; --cream:#F2F4F1; --plaster:#E1E7E1; --sage:#4E6553; --sage-d:#3C5042;
+  --ochre:#D99B1E; --ochre-text:#7E5400; --line:#CBD3CC; --white:#FFFFFF;
+  --radius:10px; --wrap:1160px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Source Sans 3",system-ui,sans-serif;font-size:1.0625rem;line-height:1.6;color:var(--ink);background:var(--cream)}
+h1,h2,h3{font-family:"Familjen Grotesk",system-ui,sans-serif;line-height:1.15;margin:0 0 .6em;letter-spacing:-.01em}
+h1{font-size:clamp(2.1rem,4.6vw,3.4rem);font-weight:700}
+h2{font-size:clamp(1.7rem,3.2vw,2.4rem);font-weight:700}
+h3{font-size:1.3rem;font-weight:600}
+p{margin:0 0 1em}
+a{color:var(--sage-d)}
+img{max-width:100%;height:auto;display:block}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:1.25rem}
+.skip{position:absolute;left:-999px;top:0;background:var(--ink);color:#fff;padding:.8rem 1rem;z-index:2000}
+.skip:focus{left:1rem;top:1rem}
+:focus-visible{outline:3px solid var(--ochre-text);outline-offset:3px;border-radius:4px}
+.eyebrow{display:inline-flex;align-items:center;gap:.55rem;font-weight:600;font-size:1rem;color:var(--ochre-text);margin-bottom:.8rem}
+.eyebrow::before{content:"";width:10px;height:10px;background:var(--ochre);border-radius:2px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;min-height:48px;padding:.75rem 1.35rem;border-radius:var(--radius);font-weight:600;text-decoration:none;font-size:1.02rem;border:2px solid transparent;transition:background-color .2s,color .2s,border-color .2s}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-primary{background:var(--ochre);color:var(--ink);border-color:var(--ochre)}
+.btn-primary:hover{background:#C78A10;border-color:#C78A10}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:var(--cream)}
+/* top bar */
+.topbar{padding:.25rem 1rem;background:var(--ink);color:#EDE8DD;font-size:.92rem}
+.topbar .wrap{display:flex;flex-wrap:wrap;gap:.4rem 1.6rem;justify-content:space-between;align-items:center;min-height:44px;padding-block:.3rem}
+.topbar span,.topbar a{display:inline-flex;align-items:center;gap:.45rem;color:#EDE8DD;text-decoration:none;min-height:44px}
+.topbar a:hover{text-decoration:underline}
+.topbar svg{width:16px;height:16px;color:var(--ochre)}
+/* header */
+header.site{background:var(--white);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:1000}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:72px}
+.brand{font-family:"Familjen Grotesk",sans-serif;font-weight:700;font-size:1.45rem;color:var(--ink);text-decoration:none;display:inline-flex;align-items:baseline;gap:.4rem;min-height:44px;align-items:center}
+.brand small{font-family:"Source Sans 3",sans-serif;font-weight:600;font-size:.8rem;color:var(--ink-2);letter-spacing:.06em;text-transform:uppercase}
+nav ul{list-style:none;display:flex;gap:.3rem;margin:0;padding:0}
+nav a{display:inline-flex;align-items:center;min-height:44px;padding:0 .8rem;color:var(--ink);text-decoration:none;font-weight:600;border-radius:6px}
+nav a:hover{background:var(--plaster)}
+@media (max-width:860px){nav{display:none}.brand small{display:none}}
+/* hero */
+.hero{padding:clamp(2.5rem,6vw,5rem) 0}
+.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(2rem,4vw,4rem);align-items:center}
+.hero .lead{font-size:1.18rem;color:var(--ink-2);max-width:36ch}
+.hero .actions{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.6rem}
+.hero figure{margin:0;position:relative}
+.hero figure img{border-radius:14px;width:100%;aspect-ratio:1200/825;object-fit:cover}
+.hero figcaption,.illu figcaption{font-size:.85rem;color:var(--ink-2);margin-top:.5rem}
+.duo{display:flex;flex-wrap:wrap;gap:.5rem;margin:1.4rem 0 0;padding:0;list-style:none}
+.duo li{padding:.35rem .8rem;border:1px solid var(--line);border-radius:999px;background:var(--white);font-weight:600;font-size:.95rem}
+@media (max-width:860px){.hero .wrap{grid-template-columns:1fr}}
+/* services */
+.services{background:var(--white);padding:3.5rem 1rem;border-block:1px solid var(--line)}
+.services header{max-width:60ch;margin-bottom:2.5rem}
+.metier{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.5rem,4vw,3.5rem);align-items:center;padding:2rem 0}
+.metier + .metier{border-top:1px solid var(--line)}
+.metier.reverse .illu{order:2}
+.metier ul{list-style:none;margin:1rem 0 0;padding:0;display:grid;gap:.55rem}
+.metier li{display:flex;gap:.7rem;align-items:flex-start}
+.metier li svg{width:20px;height:20px;flex:none;margin-top:.25rem;color:var(--sage)}
+.illu{margin:0}
+.illu img{border-radius:12px;width:100%}
+.tag{display:inline-block;font-family:"Familjen Grotesk",sans-serif;font-weight:700;font-size:.9rem;color:var(--cream);background:var(--sage-d);padding:.25rem .7rem;border-radius:6px;margin-bottom:.8rem}
+@media (max-width:860px){.metier{grid-template-columns:1fr}.metier.reverse .illu{order:0}}
+/* approche */
+.approche{padding:clamp(3rem,7vw,5.5rem) 0}
+.steps{list-style:none;padding:0;margin:2rem 0 0;display:grid;grid-template-columns:repeat(4,1fr);gap:0;counter-reset:s;border-top:2px solid var(--ink)}
+.steps li{padding:1.4rem 1.2rem 0 0;counter-increment:s}
+.steps li::before{content:"0" counter(s);display:block;font-family:"Familjen Grotesk",sans-serif;font-weight:700;font-size:1rem;color:var(--ochre-text);margin-bottom:.5rem}
+.steps h3{font-size:1.12rem;margin-bottom:.3rem}
+.steps p{color:var(--ink-2);font-size:1rem}
+@media (max-width:860px){.steps{grid-template-columns:1fr 1fr;row-gap:1rem}}
+@media (max-width:520px){.steps{grid-template-columns:1fr}}
+/* zone */
+.zone{background:var(--plaster);padding:3.5rem 1rem}
+.zone .grid{display:grid;grid-template-columns:1.25fr 1fr;gap:clamp(1.5rem,4vw,3rem);align-items:start}
+.map-box{position:relative;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--white)}
+#map{height:440px;width:100%}
+.map-hint{position:absolute;left:50%;bottom:12px;transform:translateX(-50%);z-index:500;background:rgba(31,42,46,.92);color:#fff;font-size:.88rem;padding:.35rem .8rem;border-radius:6px;pointer-events:none;transition:opacity .3s}
+.map-hint.off{opacity:0}
+.communes{columns:2;column-gap:1.5rem;list-style:none;padding:0;margin:1rem 0 1.5rem;font-size:.98rem}
+.communes li{break-inside:avoid;padding:.12rem 0}
+.communes li:first-child{font-weight:600}
+.note{font-size:.92rem;color:var(--ink-2)}
+@media (max-width:860px){.zone .grid{grid-template-columns:1fr}#map{height:320px}}
+@media (max-width:420px){#map{height:280px}}
+/* contact */
+.contact{background:var(--ink);color:#F1ECE2;padding:3.5rem 1rem}
+.contact .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:2rem;align-items:center}
+.contact h2{color:#fff}
+.contact p{color:#DCD5C8}
+.card{background:#283539;border:1px solid #435156;border-radius:14px;padding:1.8rem}
+.card dl{margin:0 0 1.4rem;display:grid;gap:.9rem}
+.card dt{font-size:.82rem;text-transform:uppercase;letter-spacing:.1em;color:#E9C46A;font-weight:600}
+.card dd{margin:0;font-size:1.15rem;color:#fff}
+.card dd a{color:#fff;font-family:"Familjen Grotesk",sans-serif;font-weight:700;font-size:1.5rem;text-decoration:none;min-height:44px;display:inline-flex;align-items:center}
+.card dd a:hover{text-decoration:underline}
+@media (max-width:860px){.contact .wrap{grid-template-columns:1fr}}
+footer{background:#172024;color:#CFC8BA;font-size:.9rem;padding:1.6rem 0}
+footer .wrap{display:flex;flex-wrap:wrap;gap:.5rem 2rem;justify-content:space-between}
+footer a{color:#fff}
+.sticky-call{display:none}
+@media (max-width:640px){
+  .sticky-call{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:1100;padding:.6rem .9rem;background:var(--white);border-top:1px solid var(--line)}
+  .sticky-call .btn{width:100%}
+  body{padding-bottom:72px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
+@media (min-width:861px){.services,.zone,.contact{padding-block:5rem}}
+.topbar .wrap,.services>.wrap,.zone>.wrap,.contact>.wrap{padding-inline:.25rem}
+</style>
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+<div class="topbar">
+  <div class="wrap">
+    <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Bernes-sur-Oise (95340) et alentours</span>
+    <a href="tel:+33678176061"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 3h3l2 5-2.5 1.5a11 11 0 0 0 7 7L16 14l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg>06 78 17 60 61</a>
+  </div>
+</div>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="#">AJ2L Renov <small>Électricité · Peinture</small></a>
+    <nav aria-label="Navigation principale">
+      <ul>
+        <li><a href="#metiers">Nos métiers</a></li>
+        <li><a href="#approche">Déroulement</a></li>
+        <li><a href="#zone">Zone d’intervention</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-primary" href="tel:+33678176061" aria-label="Appeler AJ2L Renov au 06 78 17 60 61"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 3h3l2 5-2.5 1.5a11 11 0 0 0 7 7L16 14l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg><span>Appeler</span></a>
+  </div>
+</header>
+
+<main id="contenu">
+<section class="hero" aria-labelledby="titre">
+  <div class="wrap">
+    <div>
+      <h1 id="titre">Électricien et peintre décorateur à Bernes-sur-Oise</h1>
+      <p class="lead">AJ2L Renov réunit deux savoir-faire de la rénovation : remettre votre installation électrique à niveau, puis donner à vos pièces une finition peinte soignée.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="tel:+33678176061"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 3h3l2 5-2.5 1.5a11 11 0 0 0 7 7L16 14l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg>06 78 17 60 61</a>
+        <a class="btn btn-ghost" href="#metiers">Voir nos métiers</a>
+      </div>
+      <ul class="duo" aria-label="Deux métiers">
+        <li>Électricité</li><li>Peinture</li><li>Décoration</li>
+      </ul>
+    </div>
+    <figure>
+      <img src="img/illustration-mur-peint.webp" width="1200" height="825" alt="Illustration : mur en cours de peinture avec un rouleau et une prise murale" fetchpriority="high">
+      <figcaption>Illustration</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="services" id="metiers" aria-labelledby="t-metiers">
+  <div class="wrap">
+    <header>
+      <p class="eyebrow">Nos métiers</p>
+      <h2 id="t-metiers">Un seul interlocuteur, du câble à la dernière couche</h2>
+      <p>En rénovation, l’électricité et la peinture se suivent : on passe les gaines, on rebouche, puis on peint. Les confier au même artisan simplifie l’organisation de votre chantier.</p>
+    </header>
+
+    <article class="metier">
+      <figure class="illu">
+        <img src="img/illustration-tableau-electrique.webp" width="1200" height="750" alt="Illustration : tableau électrique moderne et bien rangé" loading="lazy">
+        <figcaption>Illustration</figcaption>
+      </figure>
+      <div>
+        <span class="tag">Électricité</span>
+        <h3>Travaux électriques en logement</h3>
+        <p>Pour une installation plus sûre et adaptée à vos usages d’aujourd’hui.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Recherche de panne et remise en service</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Remplacement ou réorganisation de tableau électrique</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Mise en sécurité de l’installation</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Ajout de prises, interrupteurs et points lumineux</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Éclairage intérieur et extérieur</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="metier reverse">
+      <figure class="illu">
+        <img src="img/illustration-outils.webp" width="1200" height="750" alt="Illustration : nuancier, pinceau et outils posés sur un plan de travail en bois" loading="lazy">
+        <figcaption>Illustration</figcaption>
+      </figure>
+      <div>
+        <span class="tag">Peinture &amp; décoration</span>
+        <h3>Des murs et plafonds remis à neuf</h3>
+        <p>Une préparation sérieuse des supports pour un rendu net et durable.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Peinture intérieure : murs, plafonds, boiseries</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Préparation : rebouchage, ponçage, enduits</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Revêtements muraux et papier peint</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Conseil dans le choix des teintes et des finitions</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Rafraîchissement de pièces avant emménagement ou vente</li>
+        </ul>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="approche" id="approche" aria-labelledby="t-approche">
+  <div class="wrap">
+    <p class="eyebrow">Déroulement</p>
+    <h2 id="t-approche">Comment se passe un chantier</h2>
+    <ol class="steps">
+      <li><h3>Premier échange</h3><p>Vous décrivez votre projet ou votre problème par téléphone.</p></li>
+      <li><h3>Visite et devis</h3><p>Un passage sur place pour évaluer les travaux, puis un devis écrit.</p></li>
+      <li><h3>Réalisation</h3><p>Électricité d’abord, finitions ensuite, avec protection des sols et du mobilier.</p></li>
+      <li><h3>Remise des lieux</h3><p>Nettoyage du chantier et point final avec vous.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="zone" id="zone" aria-labelledby="t-zone">
+  <div class="wrap">
+    <p class="eyebrow">Zone d’intervention</p>
+    <h2 id="t-zone">Autour de Bernes-sur-Oise, dans un rayon d’environ 10 km</h2>
+    <div class="grid">
+      <div class="map-box">
+        <div id="map" role="region" aria-label="Carte de la zone d’intervention autour de Bernes-sur-Oise"></div>
+        <p class="map-hint" id="map-hint" aria-hidden="true">Cliquez sur la carte pour zoomer</p>
+      </div>
+      <div>
+        <p>Entre Val-d’Oise et sud de l’Oise, AJ2L Renov se déplace notamment dans les communes suivantes :</p>
+        <ul class="communes">
+          <li>Bernes-sur-Oise</li>
+          <li>Le Mesnil-en-Thelle</li>
+          <li>Bruyères-sur-Oise</li>
+          <li>Beaumont-sur-Oise</li>
+          <li>Persan</li>
+          <li>Nointel</li>
+          <li>Boran-sur-Oise</li>
+          <li>Noisy-sur-Oise</li>
+          <li>Morangles</li>
+          <li>Chambly</li>
+          <li>Mours</li>
+          <li>Fresnoy-en-Thelle</li>
+          <li>Crouy-en-Thelle</li>
+          <li>Champagne-sur-Oise</li>
+          <li>Presles</li>
+          <li>Précy-sur-Oise</li>
+          <li>Ronquerolles</li>
+          <li>Belle-Église</li>
+          <li>Asnières-sur-Oise</li>
+          <li>Saint-Martin-du-Tertre</li>
+          <li>Neuilly-en-Thelle</li>
+          <li>L&rsquo;Isle-Adam</li>
+          <li>Viarmes</li>
+          <li>Blaincourt-lès-Précy</li>
+          <li>Puiseux-le-Hauberger</li>
+          <li>Parmain</li>
+          <li>Seugy</li>
+          <li>Nerville-la-Forêt</li>
+          <li>Ercuis</li>
+          <li>Maffliers</li>
+          <li>Hédouville</li>
+          <li>Villers-sous-Saint-Leu</li>
+          <li>Gouvieux</li>
+          <li>Lamorlaye</li>
+          <li>Bornel</li>
+          <li>Belloy-en-France</li>
+          <li>Dieudonné</li>
+        </ul>
+        <p class="note">Votre commune n’apparaît pas ? Appelez pour vérifier si un déplacement est possible.</p>
+        <a class="btn btn-primary" href="tel:+33678176061"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 3h3l2 5-2.5 1.5a11 11 0 0 0 7 7L16 14l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg>Appeler le 06 78 17 60 61</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact" aria-labelledby="t-contact">
+  <div class="wrap">
+    <div>
+      <h2 id="t-contact">Parlons de vos travaux</h2>
+      <p>Une panne, un tableau à revoir, une pièce à repeindre ou une rénovation qui combine les deux : expliquez votre projet, nous convenons ensemble d’une visite.</p>
+    </div>
+    <div class="card">
+      <dl>
+        <div><dt>Téléphone</dt><dd><a href="tel:+33678176061">06 78 17 60 61</a></dd></div>
+        <div><dt>Secteur</dt><dd>Bernes-sur-Oise (95340) et environs</dd></div>
+      </dl>
+      <a class="btn btn-primary" href="tel:+33678176061"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 3h3l2 5-2.5 1.5a11 11 0 0 0 7 7L16 14l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg>Appeler maintenant</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© AJ2L Renov – Bernes-sur-Oise</span>
+    <span>Page de démonstration · Les visuels sont des illustrations.</span>
+  </div>
+</footer>
+<div class="sticky-call"><a class="btn btn-primary" href="tel:+33678176061"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 3h3l2 5-2.5 1.5a11 11 0 0 0 7 7L16 14l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg>Appeler AJ2L Renov</a></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script>
+(function(){
+  if(typeof L==="undefined"){return;}
+  var centre=[49.1620172,2.2985653];
+  var map=L.map("map",{scrollWheelZoom:false,center:centre,zoom:11});
+  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:18,attribution:"© <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap contributors</a>"}).addTo(map);
+  var cercle=L.circle(centre,{radius:10000,color:"#3C5042",weight:2,fillColor:"#D99B1E",fillOpacity:.14}).addTo(map);
+  L.circleMarker(centre,{radius:9,color:"#1F2A2E",weight:3,fillColor:"#D99B1E",fillOpacity:1}).addTo(map).bindPopup("Bernes-sur-Oise");
+  map.fitBounds(cercle.getBounds(),{padding:[10,10]});
+  var hint=document.getElementById("map-hint");
+  function on(){map.scrollWheelZoom.enable();hint.classList.add("off");}
+  map.on("click",on);map.on("focus",on);
+  map.on("mouseout",function(){map.scrollWheelZoom.disable();hint.classList.remove("off");});
+})();
+</script>
+</body>
+</html>
