@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://stevevpro-lab.github.io/demo-site/sport-garage-78/sitemap.xml
