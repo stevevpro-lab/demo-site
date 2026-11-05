@@ -1,15 +1,4 @@
 (function () {
-  // Bandeau des marques : bouton pause / lecture (critère WCAG 2.2.2)
-  var mq2 = document.getElementById('marques-defilement');
-  var mtBtn = document.querySelector('.marquee-toggle');
-  if (mq2 && mtBtn) {
-    mtBtn.hidden = false;
-    mtBtn.addEventListener('click', function () {
-      var paused = mq2.classList.toggle('is-paused');
-      mtBtn.classList.toggle('is-paused', paused);
-    });
-  }
-
   // Menu mobile (le menu reste visible si JavaScript est désactivé)
   var toggle = document.querySelector('.nav-toggle');
   var nav = document.getElementById('menu-principal');
