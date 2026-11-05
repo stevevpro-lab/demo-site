@@ -48,6 +48,12 @@ p{margin:0 0 1em}
 .rating-card .stars svg{width:20px;height:20px}
 .rating-card .rating-score{font-size:1.6rem}
 .rating-card .rating-text{display:flex;flex-direction:column;gap:.2rem}
+
+.rating-card{flex-wrap:wrap;row-gap:.55rem}
+.google-avis-hero{width:100%;font-family:var(--f-head);font-size:.95rem;font-weight:800;letter-spacing:.01em;color:#fff}
+.google-avis-hero .google-g{width:22px;height:22px}
+.google-avis-label{white-space:nowrap}
+
 .google-avis{display:inline-flex;align-items:center;gap:.35rem;font-weight:700}
 .google-avis .google-g{flex:none;display:block}
 .rating-count .google-avis{font-weight:700;color:inherit}
