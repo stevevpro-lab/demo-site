@@ -40,7 +40,7 @@ p{margin:0 0 1em}
 
 /* Note Google */
 .rating{display:inline-flex;align-items:center;gap:.55rem;font-weight:700;line-height:1.2}
-.stars{display:inline-flex;gap:2px;color:var(--accent)}
+.stars{display:inline-flex;gap:2px;color:#fbbc04}
 .stars svg{width:16px;height:16px}
 .rating-score{font-family:var(--f-head);font-weight:800;color:#fff}
 .rating-count{color:var(--steel);font-weight:600}
@@ -48,6 +48,11 @@ p{margin:0 0 1em}
 .rating-card .stars svg{width:20px;height:20px}
 .rating-card .rating-score{font-size:1.6rem}
 .rating-card .rating-text{display:flex;flex-direction:column;gap:.2rem}
+.google-avis{display:inline-flex;align-items:center;gap:.35rem;font-weight:700}
+.google-avis .google-g{flex:none;display:block}
+.rating-count .google-avis{font-weight:700;color:inherit}
+.rating-card .google-avis .google-g{width:20px;height:20px}
+
 
 /* Bandeau supérieur */
 .topbar{background:var(--k-950);color:var(--steel);font-size:.875rem;border-bottom:1px solid var(--k-800)}
