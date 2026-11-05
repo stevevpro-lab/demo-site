@@ -69,7 +69,7 @@ p{margin:0 0 1em}
 .topbar a .icon{color:var(--accent)}
 
 /* En-tête */
-.site-header{background:var(--k-900);position:sticky;top:0;z-index:50;border-bottom:3px solid var(--accent)}
+.site-header{background:var(--k-900);position:sticky;top:0;z-index:1100;border-bottom:3px solid var(--accent)}
 .site-header .wrap{display:flex;align-items:center;gap:1.25rem;min-height:74px}
 .brand{display:flex;align-items:center;gap:.7rem;text-decoration:none;color:#fff;font-family:var(--f-head);font-weight:800;font-size:1.2rem;letter-spacing:-.01em;min-height:44px;line-height:1.15}
 .brand:hover{color:#fff}
@@ -188,7 +188,7 @@ p{margin:0 0 1em}
 
 /* Zone */
 .zone-grid{display:grid;grid-template-columns:1.35fr .9fr;gap:2rem;align-items:start}
-.map-wrap{position:relative;overflow:hidden;border:1px solid var(--line);background:var(--paper)}
+.map-wrap{position:relative;overflow:hidden;border:1px solid var(--line);background:var(--paper);z-index:0;isolation:isolate}
 #zone-map{height:440px;width:100%}
 .map-fallback{position:absolute;inset:0;display:grid;place-items:center;padding:1.5rem;text-align:center;color:var(--text);background:var(--paper);font-weight:600;margin:0}
 #zone-map.map-ready + .map-fallback{display:none}
