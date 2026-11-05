@@ -66,7 +66,7 @@
       ['Éragny (95)', 49.0192178, 2.0910817]
     ];
     var map = L.map(el, { scrollWheelZoom: false, zoomSnap: 0.25 });
-    var zone = L.circle(center, { radius: 11500, color: '#16181c', weight: 2, fillColor: '#ff7b1c', fillOpacity: 0.16 });
+    var zone = L.circle(center, { radius: 11500, color: '#16181c', weight: 2, fillColor: '#0f6b75', fillOpacity: 0.16 });
     map.fitBounds(L.latLng(center).toBounds(23000), { padding: [10, 10] });
     zone.addTo(map);
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -76,7 +76,7 @@
     L.marker(center, { title: 'Conflans-Sainte-Honorine' }).addTo(map)
       .bindPopup('<strong>Sport Garage 78</strong><br>Conflans-Sainte-Honorine (78)');
     communes.forEach(function (c) {
-      L.circleMarker([c[1], c[2]], { radius: 6, color: '#16181c', weight: 2, fillColor: '#ff7b1c', fillOpacity: 1 })
+      L.circleMarker([c[1], c[2]], { radius: 6, color: '#16181c', weight: 2, fillColor: '#0f6b75', fillOpacity: 1 })
         .bindTooltip(c[0]).addTo(map);
     });
     map.on('click focus', function () { map.scrollWheelZoom.enable(); });
