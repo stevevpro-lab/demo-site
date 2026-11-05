@@ -1,8 +1,8 @@
-/* Sport Garage 78 — v2 : atelier moto, anthracite + orange signal */
+/* Sport Garage 78 — v2 : atelier moto, anthracite + bleu pétrole */
 :root{
   --k-950:#0e0f11; --k-900:#16181c; --k-800:#1f2227; --k-700:#2b2f35; --k-600:#3a3f46;
   --steel:#b9c0c8; --steel-2:#a3abb4;
-  --accent:#ff7b1c; --accent-hover:#ff9445; --accent-ink:#a84300;
+  --accent:#0f6b75; --accent-hover:#158a96; --accent-ink:#0a4f57;
   --paper:#f3f2ee; --paper-2:#e7e5df; --white:#fff;
   --text:#17191d; --muted:#4a5058; --line:#d9d6ce;
   --radius:4px; --wrap:1200px;
@@ -25,11 +25,11 @@ h3{font-size:1.2rem;font-weight:700}
 p{margin:0 0 1em}
 .on-dark h1,.on-dark h2,.on-dark h3{color:#fff}
 .wrap{width:100%;max-width:calc(var(--wrap) + 2.5rem);margin-inline:auto;padding-inline:1.25rem}
-.skip{position:absolute;left:-999px;top:0;z-index:200;background:var(--accent);color:var(--k-950);font-weight:800;padding:.85rem 1.1rem}
+.skip{position:absolute;left:-999px;top:0;z-index:200;background:var(--accent);color:#fff;font-weight:800;padding:.85rem 1.1rem}
 .skip:focus{left:1rem;top:1rem}
 :focus-visible{outline:3px solid var(--accent-ink);outline-offset:3px}
 .on-dark :focus-visible,.topbar :focus-visible,.site-header :focus-visible,.cta-band :focus-visible{outline-color:var(--accent)}
-.cta-band :focus-visible{outline-color:var(--k-950)}
+.cta-band :focus-visible{outline-color:#fff}
 .eyebrow{display:inline-flex;align-items:center;gap:.6rem;font-family:var(--f-head);font-size:.8125rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-ink);margin-bottom:.9rem}
 .eyebrow::before{content:"";width:22px;height:3px;background:currentColor}
 .on-dark .eyebrow{color:var(--accent)}
@@ -69,16 +69,16 @@ p{margin:0 0 1em}
 .main-nav a{display:flex;align-items:center;min-height:44px;padding:0 .8rem;text-decoration:none;color:#fff;font-weight:700;font-size:.97rem}
 .main-nav a:hover{color:var(--accent)}
 .main-nav a[aria-current="page"]{box-shadow:inset 0 -3px 0 var(--accent)}
-.main-nav .nav-cta a{background:var(--accent);color:var(--k-950);padding:0 1.2rem;margin-left:.5rem}
-.main-nav .nav-cta a:hover{background:var(--accent-hover);color:var(--k-950)}
+.main-nav .nav-cta a{background:var(--accent);color:#fff;padding:0 1.2rem;margin-left:.5rem}
+.main-nav .nav-cta a:hover{background:var(--accent-hover);color:#fff}
 .main-nav .nav-cta a[aria-current="page"]{box-shadow:inset 0 -3px 0 var(--k-950)}
 .nav-toggle{display:none}
 .header-phone{display:none}
 
 /* Boutons */
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;min-height:52px;padding:.7rem 1.5rem;border-radius:var(--radius);font-weight:800;font-size:1rem;text-decoration:none;border:2px solid transparent;cursor:pointer;font-family:inherit;line-height:1.2;text-align:center;transition:background-color .15s,color .15s,border-color .15s}
-.btn-accent{background:var(--accent);color:var(--k-950)}
-.btn-accent:hover{background:var(--accent-hover);color:var(--k-950)}
+.btn-accent{background:var(--accent);color:#fff}
+.btn-accent:hover{background:var(--accent-hover);color:#fff}
 .btn-ghost{background:rgba(14,15,17,.55);color:#fff;border-color:rgba(255,255,255,.55)}
 .btn-ghost:hover{border-color:#fff;background:rgba(14,15,17,.8);color:#fff}
 .btn-dark{background:var(--k-900);color:#fff}
@@ -124,7 +124,7 @@ p{margin:0 0 1em}
 .card-media{overflow:hidden;position:relative}
 .card img{aspect-ratio:4/3;object-fit:cover;width:100%;transition:transform .35s}
 .card:hover img{transform:scale(1.03)}
-.card-tag{position:absolute;left:0;top:0;background:var(--accent);color:var(--k-950);font-family:var(--f-head);font-weight:800;font-size:.8rem;letter-spacing:.08em;padding:.35rem .7rem}
+.card-tag{position:absolute;left:0;top:0;background:var(--accent);color:#fff;font-family:var(--f-head);font-weight:800;font-size:.8rem;letter-spacing:.08em;padding:.35rem .7rem}
 .card-body{padding:1.2rem 1.3rem 1.35rem;display:flex;flex-direction:column;gap:.4rem;flex:1}
 .card-body h3{color:#fff;margin:0;font-size:1.2rem}
 .card-body p{margin:0;color:var(--steel);font-size:.97rem}
@@ -155,13 +155,13 @@ p{margin:0 0 1em}
 .brands p a{color:#fff}
 
 /* Bloc CTA contrasté */
-.cta-band{background:var(--accent);color:var(--k-950);position:relative;overflow:hidden}
+.cta-band{background:var(--accent);color:#fff;position:relative;overflow:hidden}
 .cta-band .wrap{display:grid;grid-template-columns:1.3fr auto;gap:2rem;align-items:center;padding-block:clamp(3rem,7vw,4.5rem)}
-.cta-band h2{color:var(--k-950);margin-bottom:.4em}
-.cta-band p{color:var(--k-950);margin:0;max-width:58ch;font-weight:600}
+.cta-band h2{color:#fff;margin-bottom:.4em}
+.cta-band p{color:#fff;margin:0;max-width:58ch;font-weight:600}
 .cta-band .btn-dark{background:var(--k-950)}
 .cta-band .btn-dark:hover{background:var(--k-700)}
-.cta-band .btn-outline{border-color:var(--k-950);color:var(--k-950)}
+.cta-band .btn-outline{border-color:#fff;color:#fff}
 .cta-band .btn-outline:hover{background:var(--k-950);color:#fff}
 
 /* Processus */
@@ -333,8 +333,8 @@ p{margin:0 0 1em}
   /* Bouton d'appel fixe : le body réserve sa hauteur pour ne rien masquer */
   :root{--fab-h:64px}
   body{padding-bottom:calc(var(--fab-h) + 16px + env(safe-area-inset-bottom))}
-  .call-fab{display:flex;position:fixed;left:12px;right:12px;bottom:calc(10px + env(safe-area-inset-bottom));z-index:90;min-height:var(--fab-h);align-items:center;justify-content:center;gap:.6rem;background:var(--accent);color:var(--k-950);font-weight:800;font-size:1.05rem;text-decoration:none;border:2px solid var(--k-950);box-shadow:0 6px 18px rgba(0,0,0,.35)}
-  .call-fab:hover{background:var(--accent-hover);color:var(--k-950)}
+  .call-fab{display:flex;position:fixed;left:12px;right:12px;bottom:calc(10px + env(safe-area-inset-bottom));z-index:90;min-height:var(--fab-h);align-items:center;justify-content:center;gap:.6rem;background:var(--accent);color:#fff;font-weight:800;font-size:1.05rem;text-decoration:none;border:2px solid var(--k-950);box-shadow:0 6px 18px rgba(0,0,0,.35)}
+  .call-fab:hover{background:var(--accent-hover);color:#fff}
   .call-fab:focus-visible{outline:3px solid var(--k-950);outline-offset:2px}
 }
 @media (max-width:600px){
